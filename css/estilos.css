@@ -33,11 +33,11 @@ body {
 	/*===>*/
 	transform-style: preserve-3d;
 	/*===>*/
-	backface-visibility: hidden;
 	z-index: 2;
 }
 
 .tarjeta.active {
+	
 	transform: rotateY(180deg);
 }
 
@@ -50,7 +50,7 @@ body {
 	justify-content: space-between;
 	box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
 }
-
+/* tarjeta delanera */
 .tarjeta .delantera {
 	width: 100%;
 	background: url('../img/bg-tarjeta/bg-tarjeta-02.jpg');
@@ -82,9 +82,7 @@ body {
 	margin-bottom: 5px;
 }
 
-.delantera .grupo .numero, 
-.delantera .grupo .nombre, 
-.delantera .grupo .expiracion {
+.delantera .grupo .numero, .delantera .grupo .nombre, .delantera .grupo .expiracion {
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -98,14 +96,16 @@ body {
 /* Tarjeta trasera */
 
 .trasera {
+	width: 100%;
 	background: url('../img/bg-tarjeta/bg-tarjeta-02.jpg');
-	background-size: contain;
+	background-size: cover;
 	position: absolute;
 	top: 0;
 	/*===>*/
 	transform: rotatey(180deg);
 	/*===>*/
 	backface-visibility: hidden;
+	
 }
 
 .trasera .barra-magnetica {
@@ -113,7 +113,7 @@ body {
 	background: #000;
 	width: 100%;
 	position: absolute;
-	top: 30;
+	top: 30px; 
 	left: 0;
 }
 
@@ -147,9 +147,9 @@ body {
 }
 
 .trasera .datos #ccv .ccv {
-	background: #000;
-	height: 40px;
 	background: #fff;
+	color: #000;
+	height: 40px;
 	padding: 10px;
 	text-align: center;
 }
@@ -217,9 +217,7 @@ body {
 	font-size: 16px;
 }
 
-.formulario-tarjeta input, 
-.formulario-tarjeta select, 
-.btn-enviar {
+.formulario-tarjeta input, .formulario-tarjeta select, .btn-enviar {
 	border: 2px solid #ced6e0;
 	font-size: 18px;
 	height: 50px;
@@ -280,7 +278,7 @@ body {
 	color: #93bfed;
 }
 
-.formulario-tarjeta .btn-enviar{
+.formulario-tarjeta .btn-enviar {
 	border: none;
 	font-size: 22px;
 	padding: 10px;
@@ -289,6 +287,7 @@ body {
 	box-shadow: 2px 2px 10px 0 rgba(0, 85, 212, 0.4);
 	cursor: pointer;
 }
-.formulario-tarjeta .btn-enviar:hover{
+
+.formulario-tarjeta .btn-enviar:hover {
 	background: #1850b1;
 }
