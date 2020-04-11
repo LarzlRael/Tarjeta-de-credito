@@ -1,5 +1,6 @@
 const tarjeta  = document.querySelector('#tarjeta'),
-      btnAbrirFormulario = document.querySelector('.btn-abrir-formulario');
+      btnAbrirFormulario = document.querySelector('.btn-abrir-formulario'),
+      formulario = document.querySelector('#formulario-tarjeta');
 
 tarjeta.addEventListener('click',()=>{
     // togle es si tiene esta clase la pone y si no la quita
@@ -7,5 +8,7 @@ tarjeta.addEventListener('click',()=>{
 });
 
 btnAbrirFormulario.addEventListener('click',()=>{
-    btnAbrirFormulario.classList.toggle('active'); 
+    btnAbrirFormulario.classList.toggle('active');
+    formulario.classList.toggle('active');
+
 })
